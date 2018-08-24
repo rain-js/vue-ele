@@ -1,0 +1,16 @@
+@charset "utf-8";
+$color:#447DF8; // 主色调
+$font_color:#303133;
+$font_color_min:#606266;
+
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+}
